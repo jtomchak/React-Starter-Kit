@@ -3,7 +3,7 @@
 1. Create a project folder and change directory into it, `cd <project-folder>`
 2. run `npm init -y`
 3. We need to add some dev dependencies:
-   `npm install -D bable-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 webpack webpack-dev-sever`
+   `npm install -D babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 webpack webpack-dev-server`
 4. We also need some regular dependencies:
    `npm install react react-dom react-router-dom redux react-redux reselect`
 5. Ok, we're getting there, let's add a babel property to our package.json file. This will config our babel to leverage es2015, react, and stage-2 for transpile.
