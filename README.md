@@ -26,7 +26,13 @@
 6. We need to add an npm script to our package.json file. This lets us run `npm start` from the command line, and have it do the thing we actually want, without having to remember the whole thing.
 
 ```js
-`"start": "webpack-dev-server --open"`;
+//package.json
+...
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+...
 ```
 
 7. OK, so close. Let's create our webpack.config.js file in the root of our application and it should looke like this:
