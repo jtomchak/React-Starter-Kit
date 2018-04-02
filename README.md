@@ -1,12 +1,12 @@
 # React-Starter-Kit
 
-1. Create a project folder and change directory into it, `cd <project-folder>`
-2. run `npm init -y`
-3. We need to add some dev dependencies:
-   `npm install -D babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 webpack webpack-dev-server`
-4. We also need some regular dependencies:
-   `npm install react react-dom react-router-dom redux react-redux reselect`
-5. Ok, we're getting there, let's add a babel property to our package.json file. This will config our babel to leverage es2015, react, and stage-2 for transpile.
+1.  Create a project folder and change directory into it, `cd <project-folder>`
+2.  run `npm init -y`
+3.  We need to add some dev dependencies:
+    `npm install -D babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 webpack@3 webpack-dev-server@2`
+4.  We also need some regular dependencies:
+    `npm install react react-dom react-router-dom redux react-redux reselect`
+5.  Ok, we're getting there, let's add a babel property to our package.json file. This will config our babel to leverage es2015, react, and stage-2 for transpile.
 
 ```js
 "babel": {
@@ -23,7 +23,7 @@
 }
 ```
 
-6. We need to add an npm script to our package.json file. This lets us run `npm start` from the command line, and have it do the thing we actually want, without having to remember the whole thing.
+6.  We need to add an npm script to our package.json file. This lets us run `npm start` from the command line, and have it do the thing we actually want, without having to remember the whole thing.
 
 ```js
 //package.json
@@ -35,7 +35,7 @@
 ...
 ```
 
-7. OK, so close. Let's create our webpack.config.js file in the root of our application and it should looke like this:
+7.  OK, so close. Let's create our webpack.config.js file in the root of our application and it should looke like this:
 
 ```js
 const { resolve } = require("path");
@@ -73,7 +73,7 @@ module.exports = {
 };
 ```
 
-8. With our webpack, we've told it our app files are going to be in `scr/` and the content is going to be served out of `public/`. Let's create our public **folder** and put the index.html file in it. This will also have our div with id attribute to insert our react app into, and also the script to load our bundled application
+8.  With our webpack, we've told it our app files are going to be in `scr/` and the content is going to be served out of `public/`. Let's create our public **folder** and put the index.html file in it. This will also have our div with id attribute to insert our react app into, and also the script to load our bundled application
 
 ```HTML
 <!doctype html>
@@ -88,7 +88,7 @@ module.exports = {
 </html>
 ```
 
-9. Last File!!! We need a **folder** `src`, and in it we're gonna put our index.js, this is the entry point into our application. We can just start with a console log to ensure it's all wired up.
+9.  Last File!!! We need a **folder** `src`, and in it we're gonna put our index.js, this is the entry point into our application. We can just start with a console log to ensure it's all wired up.
 
 ```js
 console.log("Hello React!!!");
